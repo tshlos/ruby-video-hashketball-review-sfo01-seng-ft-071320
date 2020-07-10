@@ -197,7 +197,7 @@ end
 def stats(name, location)
   player_name = game_hash[location][:players]
   if player_name[:player_name] == name
-    player = game_hash[location][:players].each { |player| return player}
+    player = game_hash[location][:players].map { |player| return player}
   end 
 end
 
