@@ -196,8 +196,6 @@ end
 
 
 def player_stats(name)
-  player = game_hash[:away][:players].find { |player| player[:player_name] == name }
-  if player 
-    puts player 
-  end
+  player = game_hash[:away][:players].find { |player| player[:player_name] == name } 
+  return player
 end
