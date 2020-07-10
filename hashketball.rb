@@ -199,7 +199,6 @@ def player_stats(name)
   player = game_hash[:away][:players].each { |player| player[:player_name] == name }
   binding.pry
   if player
-    puts player
-      binding.pry
+    return player
   end
 end
