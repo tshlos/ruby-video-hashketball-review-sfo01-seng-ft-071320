@@ -198,7 +198,6 @@ def stats(name, location)
   player = game_hash[location][:players].find { |player| player[:player_name] == name } 
 end
 
-
 def player_stats(name)
   player = stats(name, :home)
   if player
