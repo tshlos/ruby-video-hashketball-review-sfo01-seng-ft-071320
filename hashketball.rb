@@ -200,4 +200,6 @@ def player_stats(name)
   binding.pry
   if player
     puts player
+      binding.pry
+
   end
