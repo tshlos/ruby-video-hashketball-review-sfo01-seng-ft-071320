@@ -194,7 +194,12 @@ def player_numbers(team_name)
   team_numbers(team_name, :away)
 end
 
-
+def stats(name, location)
+  player_name = game_hash[location][:players]
+  if player_name[:player_name] == name
+    player = game_hash[location][:players].each { |player| return player}
+  end 
+end
 def player_stats(name)
   player = game_hash[:away][:players].each do |player|
     if player[:player_name] == name
