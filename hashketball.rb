@@ -213,5 +213,4 @@ def big_shoe_rebounds
     player.each { |key, value| key[:shoe] }
     binding.pry
   end
-  binding.pry
 end
