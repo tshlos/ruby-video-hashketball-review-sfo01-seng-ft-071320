@@ -208,7 +208,7 @@ end
 
 
 def big_shoe_rebounds
-  players = game_hash[:away][:players]
+  players = game_hash[:away][:players].concat(game_hash[:home][:players])
   biggest_shoe = players[:shoe].max
   binding.pry
 end
