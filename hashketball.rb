@@ -208,6 +208,6 @@ end
 
 
 def big_shoe_rebounds
-  shoe_size = game_hash[:home][:players].find { |player| player[:shoe] }
+  shoe_size = game_hash[:home][:players].each { |player| player[:shoe] }
   binding.pry
 end
