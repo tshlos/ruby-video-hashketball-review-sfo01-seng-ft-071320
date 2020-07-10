@@ -195,8 +195,8 @@ def player_numbers(team_name)
 end
 
 def stats(name, location)
-  player = game_hash[:away][:players].find { |player| player[:player_name] == name } 
-return player
+  player = game_hash[location][:players].find { |player| player[:player_name] == name } 
+  return player
 end
 
 def player_stats(name)
