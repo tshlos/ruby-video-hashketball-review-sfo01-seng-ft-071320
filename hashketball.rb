@@ -200,15 +200,11 @@ def stats(name, location)
     player = game_hash[location][:players].each { |player| return player}
   end 
 end
+
 def player_stats(name)
-  player = game_hash[:away][:players].each do |player|
-    if player[:player_name] == name
-      player
-    end
-  end 
-  player = game_hash[:home][:players].each do |player|
-    if player[:player_name] == name
-      player
-    end
-  end 
+  result = stats(name, :home)
+  if result
+    return result
+  end
+  stats(name, :away)
 end
