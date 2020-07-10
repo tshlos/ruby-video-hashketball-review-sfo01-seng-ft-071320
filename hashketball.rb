@@ -194,17 +194,10 @@ def player_numbers(team_name)
   team_numbers(team_name, :away)
 end
 
-def stats(name, location)
-  player_name = game_hash[location][:players]
-  if player_name[:player_name] == name
-    player = game_hash[location][:players].map { |player| return player}
-  end 
-end
 
 def player_stats(name)
-  result = stats(name, :home)
-  if result
-    return result
+  player = game_hash[:away][:players]
+  binding.pry
+    
   end
-  stats(name, :away)
 end
