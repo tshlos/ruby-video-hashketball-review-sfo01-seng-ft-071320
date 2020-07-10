@@ -202,7 +202,7 @@ def player_stats(name)
         binding.pry
 
     if player_name
-      puts player
+      puts playerpla
     end
         binding.pry
 
