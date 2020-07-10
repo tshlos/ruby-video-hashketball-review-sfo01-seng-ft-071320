@@ -209,6 +209,6 @@ end
 
 def big_shoe_rebounds
   player = game_hash[:home][:players]
-  player.each { |attributes| }
+  player_shoe = player.each { |element| element[:shoe] }
   binding.pry
 end
