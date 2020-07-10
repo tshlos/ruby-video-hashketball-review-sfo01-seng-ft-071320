@@ -196,7 +196,8 @@ end
 
 
 def player_stats(name)
-  player = game_hash[:away][:players]
+  player = game_hash[:away][:players].each { |player| player[:player_name] == name }
+  return player
   binding.pry
     
 end
