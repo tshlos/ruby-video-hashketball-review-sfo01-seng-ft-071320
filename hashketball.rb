@@ -211,7 +211,7 @@ def big_shoe_rebounds
   players = game_hash[:away][:players].concat(game_hash[:home][:players])
   binding.pry
   biggest_shoe = players.max { |player1, player2| player1[:shoe] <=> player2[:shoe] }
-  return player
+  return biggest_shoe[:rebounds]
   binding.pry
 end
 
