@@ -208,5 +208,6 @@ end
 
 
 def big_shoe_rebounds
-  
+  players = game_hash[:away][:players]
+  biggest_shoe = players[:shoe].max
 end
