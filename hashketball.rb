@@ -194,9 +194,11 @@ def player_numbers(team_name)
   team_numbers(team_name, :away)
 end
 
+def stats(name, location)
+    player = game_hash[:away][:players].find { |player| player[:player_name] == name } 
+  return player
+end
 
 def player_stats(name)
-  player = game_hash[:away][:players].find { |player| player[:player_name] == name } 
-  return player
-  binding.pry
+
 end
