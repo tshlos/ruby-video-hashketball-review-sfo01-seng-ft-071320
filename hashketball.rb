@@ -205,3 +205,8 @@ def player_stats(name)
   end
   stats(name, :away)
 end
+
+
+def big_shoe_rebounds
+  game_hash[location]
+end
