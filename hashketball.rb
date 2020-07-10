@@ -199,5 +199,4 @@ def player_stats(name)
   player = game_hash[:away][:players]
   binding.pry
     
-  end
 end
