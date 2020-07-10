@@ -197,4 +197,6 @@ end
 
 def player_stats(name)
   player = game_hash[:away][:players].each { |player| player[:player_name] == name }
-end
+  if player
+    puts player
+  end
