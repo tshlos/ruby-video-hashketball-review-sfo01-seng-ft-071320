@@ -198,4 +198,5 @@ end
 def player_stats(name)
   player = game_hash[:away][:players].find { |player| player[:player_name] == name } 
   return player
+  binding.pry
 end
